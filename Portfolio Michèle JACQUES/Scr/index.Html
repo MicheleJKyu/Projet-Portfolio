@@ -41,13 +41,28 @@
         </div>
     </div>
 
+    <!--Paricle JS-->
+
+
+    <!-- Typed js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+
     <script>
         let menu = document.querySelector('ul');
-        let bars = document.querySelector('.header .far-bars');
+        let bars = document.querySelector('.header .fa-bars');
 
         bars.addEventListener('click', () => {
             menu.classList.toggle('show')
         });
+
+        var typed = new Typed('#text' , {
+            strings: ['Développeuse Web.' , 'développeuse Mobile.' , 'Développeuse Front-End.' , 'Développeuse Back-End.' , 'Développeuse Applications.'],
+            typeSpeed: 15,
+            backSpeed: 15,
+            smartBackspace: true,
+            loop: true,
+        })
+
     </script>
 
 
